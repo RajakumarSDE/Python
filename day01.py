@@ -1,4 +1,4 @@
-# this is a 5 type of input i get from a user here i getting input from multiple data types like (int , str , float)
+# this is a  5 type of input i get from a user here i getting input from multiple data types like (int , str , float)
 
 firstname = str(input("Enter Your First Name : "))
 lastname  = str(input("Enter Your Last Name : "))
