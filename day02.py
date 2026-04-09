@@ -1,12 +1,12 @@
-# This is my day 2 python code 
-#print("Hello, World!")
+# This is my day 2 python code
+# print("Hello, World!")
 
-#a = 10
-#print (type(a))
+# a = 10
+# print (type(a))
 
-#raja = 100
-#print (raja)
-#print (type(raja))
+# raja = 100
+# print (raja)
+# print (type(raja))
 """
 a = int("10")
 
@@ -20,9 +20,8 @@ sub = num1 - num2
 mul = num1 * num2
 div = num1 / num2
 pre = num1 % num2
-print ("The addition of two number is : " , add)
-print ("The subtraction of two number is : " , sub)
-print ("The multiplication of two number is : " , mul)
-print ("The division of two number is : " , div)
-print ("The remainder of two number is : " , pre)
-
+print("The addition of two number is : ", add)
+print("The subtraction of two number is : ", sub)
+print("The multiplication of two number is : ", mul)
+print("The division of two number is : ", div)
+print("The remainder of two number is : ", pre)
