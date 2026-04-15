@@ -21,5 +21,3 @@ print(course_name[0:6])
 
 Hello = "Python forthe \n beginners \"this\" is a new one "
 print(Hello)
-
-
