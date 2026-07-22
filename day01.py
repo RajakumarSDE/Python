@@ -3,7 +3,7 @@
 firstname = str(input("Enter Your First Name : "))
 lastname = str(input("Enter Your Last Name : "))
 age = int(input("Enter Your Age : "))
-salary = float(input("Enter Your LPA : "))
+salary = float(input("Enter Your LPA : ")) 
 role = str(input("Enter your designation : "))
 
 # here i will will the user data on the print message
