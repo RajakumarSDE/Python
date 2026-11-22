@@ -13,6 +13,7 @@ a = int("10")
 b = int("77")
 c = a+b
 """
+print()
 num1 = int(input("Enter the first number :"))
 num2 = int(input("Enter the second number :"))
 
@@ -21,9 +22,14 @@ sub = num1 - num2
 mul = num1 * num2
 div = num1 / num2
 pre = num1 % num2
-
+print()
 print("The addition of two number is : ", add)
+print()
 print("The subtraction of two number is : ", sub)
+print()
 print("The multiplication of two number is : ", mul)
+print()
 print("The division of two number is : ", div)
+print()
 print("The remainder of two number is : ", pre)
+print()
