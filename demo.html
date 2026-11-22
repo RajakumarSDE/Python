@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barcode Label Generator</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align:center;
+            margin:20px;
+        }
+
+        input{
+            width:300px;
+            padding:8px;
+            margin:5px;
+        }
+
+        button{
+            padding:10px 20px;
+            cursor:pointer;
+        }
+
+        #label{
+            width:350px;
+            margin:20px auto;
+            border:1px solid #000;
+            padding:10px;
+        }
+
+        .company{
+            font-size:24px;
+            font-weight:bold;
+        }
+
+        .product{
+            font-size:18px;
+            font-weight:bold;
+        }
+
+        .item{
+            font-size:22px;
+            font-weight:bold;
+            margin:10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Barcode Label Generator</h2>
+
+<input id="product" placeholder="Product Name"><br>
+
+<input id="itemcode" placeholder="Item Code"><br>
+
+<input id="imei" placeholder="IMEI Number"><br>
+
+<button onclick="generate()">Generate Label</button>
+
+<div id="label">
+
+<div class="company">Poorvika Mobiles Pvt Ltd</div>
+
+<div class="product" id="pname"></div>
+
+<div class="item">
+Item Code : <span id="icode"></span>
+</div>
+
+<svg id="barcode"></svg>
+
+<div id="imeitext"></div>
+
+</div>
+
+<script>
+
+function generate(){
+
+let product=document.getElementById("product").value;
+let item=document.getElementById("itemcode").value;
+let imei=document.getElementById("imei").value;
+
+document.getElementById("pname").innerHTML=product;
+document.getElementById("icode").innerHTML=item;
+document.getElementById("imeitext").innerHTML=imei;
+
+JsBarcode("#barcode", imei, {
+    format:"CODE128",
+    width:2,
+    height:60,
+    displayValue:false
+});
+
+}
+
+</script>
+
+</body>
+</html>
