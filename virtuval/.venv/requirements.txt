@@ -1,1 +1,3 @@
 requests
+
+#Scripts\Activate.ps1
